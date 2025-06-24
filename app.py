@@ -3,8 +3,8 @@ import pandas as pd
 import numpy as np
 
 # ---- Login ----
-USERNAME = "director"
-PASSWORD = "uniform123"
+USERNAME = "D1Rect0R"
+PASSWORD = "AHSTigerB@nd"
 
 if "authenticated" not in st.session_state:
     st.session_state.authenticated = False
