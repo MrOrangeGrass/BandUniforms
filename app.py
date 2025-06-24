@@ -16,7 +16,7 @@ if not st.session_state.authenticated:
     if st.button("Login"):
         if username == USERNAME and password == PASSWORD:
             st.session_state.authenticated = True
-            st.experimental_rerun()
+            st.rerun()
         else:
             st.error("Incorrect username or password")
     st.stop()
