@@ -31,7 +31,11 @@ if uploaded_file:
 else:
     df = pd.DataFrame(columns=["Name", "Height", "Waist", "Seat", "InUse"])
 
-df["InUse"] = df["InUse"].fillna(0).astype(bool)
+if "InUse" not in df.columns:
+    df["InUse"] = False
+else:
+    df["InUse"] = df["InUse"].fillna(0).astype(bool)
+
 
 # ---- Add Uniform ----
 with st.expander("➕ Add New Uniform"):
